@@ -25,6 +25,6 @@ func render(c *gin.Context, data gin.H, templateName string) {
 	case "application/xml":
 		c.XML(http.StatusOK, data["payload"])
 	default:
-		c.HTML(http.StatusOK, templateName, data["payload"])
+		c.HTML(http.StatusOK, templateName, data)
 	}
 }
