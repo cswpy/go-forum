@@ -1,0 +1,8 @@
+*.a
+*.o
+*.so
+
+app
+*.mod
+*.sum
+*.exe
